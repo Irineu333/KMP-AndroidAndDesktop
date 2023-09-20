@@ -21,3 +21,4 @@ plugins {
 rootProject.name = "KMP-AndroidAndDesktop-Project"
 
 include(":android")
+include(":shared")
