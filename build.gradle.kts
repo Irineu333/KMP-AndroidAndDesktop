@@ -1,13 +1,11 @@
 plugins {
     kotlin("multiplatform") version "1.9.0"
+    kotlin("android") version "1.9.0" apply false
+    id("com.android.application") version "8.0.0" apply false
 }
 
 group = "org.example"
 version = "1.0-DEV"
-
-repositories {
-    mavenCentral()
-}
 
 java {
     toolchain {
