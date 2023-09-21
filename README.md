@@ -1,4 +1,4 @@
-# [Template] KMP Android And ~~Desktop~~ Empty Project
+# [Template] KMP Android And Desktop Empty Project
 
 Template of an android and desktop multiplatform project.
 
