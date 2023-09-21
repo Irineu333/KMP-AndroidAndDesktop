@@ -3,6 +3,13 @@ plugins {
     kotlin("android")
 }
 
+java {
+    toolchain {
+        languageVersion.set(JavaLanguageVersion.of(19))
+        vendor.set(JvmVendorSpec.ORACLE)
+    }
+}
+
 android {
     namespace = "org.example.android"
     compileSdk = 33
@@ -27,11 +34,6 @@ android {
         release {
             isMinifyEnabled = false
         }
-    }
-
-    compileOptions {
-        sourceCompatibility = JavaVersion.VERSION_17
-        targetCompatibility = JavaVersion.VERSION_17
     }
 
     buildFeatures {
