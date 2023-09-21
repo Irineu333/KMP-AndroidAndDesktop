@@ -1,3 +1,5 @@
+import org.example.shared.getPlatform
+
 fun main() {
-    println("Olá, mundo!")
+    println("Olá, ${getPlatform().value}")
 }
