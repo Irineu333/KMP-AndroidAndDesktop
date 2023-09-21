@@ -22,3 +22,4 @@ rootProject.name = "KMP-AndroidAndDesktop-Project"
 
 include(":android")
 include(":shared")
+include(":desktop")

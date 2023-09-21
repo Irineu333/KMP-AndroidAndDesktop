@@ -11,8 +11,12 @@ kotlin {
 
     androidTarget()
 
+    jvm("desktop")
+
     sourceSets {
         val androidMain by getting
+
+        val desktopMain by getting
 
         val commonMain by getting
         val commonTest by getting {
