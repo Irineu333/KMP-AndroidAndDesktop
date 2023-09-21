@@ -11,4 +11,6 @@ Template of an android and desktop multiplatform project.
 
 ## Samples
 - [Kotlin Multiplatform for mobile samples](https://kotlinlang.org/docs/multiplatform-mobile-samples.html)
-- [KMP Calculator](https://github.dev/ipirangad3v/kmp-calculator/tree/main)
+- [KMP Calculator | Anthoni Ipiranga](https://github.dev/ipirangad3v/kmp-calculator)
+- [MusicApp-KMP | Abdul Basit](https://github.com/SEAbdulbasit/MusicApp-KMP)
+- [NoteAppKMM | Philipp Lackner](https://github.com/philipplackner/NoteAppKMM)
