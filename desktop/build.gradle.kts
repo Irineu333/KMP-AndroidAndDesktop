@@ -3,15 +3,21 @@ version = "1.0-DEV"
 
 plugins {
     kotlin("jvm")
+    id("org.jetbrains.compose")
 }
 
-java {
-    toolchain {
-        languageVersion.set(JavaLanguageVersion.of(19))
-        vendor.set(JvmVendorSpec.ORACLE)
-    }
+kotlin {
+    jvmToolchain(17)
 }
 
 dependencies {
     implementation(project(":shared"))
+    implementation(compose.desktop.currentOs)
+}
+
+
+compose.desktop {
+    application {
+        mainClass = "org.example.desktop.MainKt"
+    }
 }
