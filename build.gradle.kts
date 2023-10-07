@@ -5,5 +5,12 @@ plugins {
     id("com.android.library") version "8.1.0" apply false
 }
 
+allprojects {
+    repositories {
+        google()
+        mavenCentral()
+    }
+}
+
 group = "org.example"
 version = "1.0-DEV"

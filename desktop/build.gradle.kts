@@ -1,5 +1,8 @@
+group = "org.example.desktop"
+version = "1.0-DEV"
+
 plugins {
-    kotlin("multiplatform")
+    kotlin("jvm")
 }
 
 java {
@@ -9,17 +12,6 @@ java {
     }
 }
 
-kotlin {
-
-    jvm {
-        withJava()
-    }
-
-    sourceSets {
-        val jvmMain by getting {
-            dependencies {
-                implementation(project(":shared"))
-            }
-        }
-    }
+dependencies {
+    implementation(project(":shared"))
 }

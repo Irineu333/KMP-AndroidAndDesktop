@@ -1,10 +1,10 @@
+group = "org.example.shared"
+version = "1.0-DEV"
+
 plugins {
     kotlin("multiplatform")
     id("com.android.library")
 }
-
-group = "org.example"
-version = "1.0-DEV"
 
 java {
     toolchain {
@@ -14,8 +14,6 @@ java {
 }
 
 kotlin {
-    targetHierarchy.default()
-
     androidTarget()
 
     jvm("desktop")
@@ -26,11 +24,6 @@ kotlin {
         val desktopMain by getting
 
         val commonMain by getting
-        val commonTest by getting {
-            dependencies {
-                implementation(kotlin("test"))
-            }
-        }
     }
 }
 
