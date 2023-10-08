@@ -4,6 +4,8 @@ Cross-platform project template with **android** and **desktop** targets (with *
 
 ## Versions
 
+Latest combination without errors and warnings (2023-10-07):
+
 - Kotlin: 1.8.10 (compatible with compose compiler 1.4.3)
 - AGP: 7.4.0 (compatible with Kotlin Plugin 1.8.10)
 - JDK: 17 (supported for AGP 7.4.0)
@@ -27,6 +29,12 @@ Download and install [Intellij IDEA](https://www.jetbrains.com/idea/download).
 2. Open the project in Intellij IDEA.
 3. Run with `gradlew :desktop:run`.
 4. Or package a distribution with `gradlew :desktop:packageDistributionForCurrentOS` (build/compose/binaries).
+
+## Screenshots
+
+| Android                                 | Desktop                                   |
+|-----------------------------------------|-------------------------------------------|
+| ![android.png](screenshots/android.png) | ![desktop image](screenshots/desktop.png) |
 
 ## Docs
 - [Configure a Gradle project | Kotlin](https://kotlinlang.org/docs/gradle-configure-project.html)
