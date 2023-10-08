@@ -26,6 +26,7 @@ Download and install [Intellij IDEA](https://www.jetbrains.com/idea/download).
 1. Configure the JDK (17).
 2. Open the project in Intellij IDEA.
 3. Run with `gradlew :desktop:run`.
+4. Or package a distribution with `gradlew :desktop:packageDistributionForCurrentOS` (build/compose/binaries).
 
 ## Docs
 - [Configure a Gradle project | Kotlin](https://kotlinlang.org/docs/gradle-configure-project.html)
