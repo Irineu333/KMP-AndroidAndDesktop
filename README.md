@@ -32,9 +32,10 @@ Download and install [Intellij IDEA](https://www.jetbrains.com/idea/download).
 
 ## Screenshots
 
-| Android                                 | Desktop                                   |
-|-----------------------------------------|-------------------------------------------|
-| ![android.png](screenshots/android.png) | ![desktop image](screenshots/desktop.png) |
+| Android                                               | Desktop                                           |
+|-------------------------------------------------------|---------------------------------------------------|
+| ![android.png](screenshots/android.png)               | ![desktop](screenshots/desktop.png)               |
+| ![android dialog.png](screenshots/android-dialog.png) | ![desktop dialog](screenshots/desktop-dialog.png) |
 
 ## Docs
 - [Configure a Gradle project | Kotlin](https://kotlinlang.org/docs/gradle-configure-project.html)
