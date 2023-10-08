@@ -5,7 +5,7 @@ import androidx.activity.ComponentActivity
 import androidx.activity.compose.setContent
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.tooling.preview.Preview
-import org.example.shared.App
+import org.example.shared.ui.App
 
 class MainActivity : ComponentActivity() {
 
