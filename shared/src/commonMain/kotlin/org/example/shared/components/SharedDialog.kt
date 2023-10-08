@@ -1,4 +1,4 @@
-package org.example.shared.ui
+package org.example.shared.components
 
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.graphics.painter.Painter
