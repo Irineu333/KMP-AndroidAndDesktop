@@ -19,8 +19,8 @@ Download and install [Intellij IDEA](https://www.jetbrains.com/idea/download).
 
 1. Configure the JDK (17) and Android SDK.
 2. Open the project in Intellij IDEA.
-3. Create a `local.properties` with `sdk.dir=<path to Android SDK>` in the root of the project.
-4. Open a and install with gradlew `gradlew :android:installDebug`(connected device or emulator required).
+3. Install Android SDK using SDK Setup of IntelliJ (Settings/Languages & Framework/Android SDK).
+4. Open and install with `gradlew :android:installDebug`(connected device or emulator required).
 5. Or build an apk with `gradlew :android:assembleDebug` (android/build/outputs/apk/debug/android-debug.apk) .
 
 ### Desktop
