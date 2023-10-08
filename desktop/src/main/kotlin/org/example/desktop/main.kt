@@ -12,7 +12,10 @@ fun main() = application {
     Window(
         onCloseRequest = ::exitApplication,
         title = "Compose for Desktop",
-        state = rememberWindowState(width = 300.dp, height = 300.dp)
+        state = rememberWindowState(
+            width = 300.dp,
+            height = 300.dp
+        )
     ) {
         App()
     }
