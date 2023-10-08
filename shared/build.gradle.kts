@@ -34,6 +34,8 @@ kotlin {
 
         val commonMain by getting {
             dependencies {
+                api(compose.materialIconsExtended)
+
                 implementation(compose.runtime)
                 implementation(compose.foundation)
                 implementation(compose.ui)
