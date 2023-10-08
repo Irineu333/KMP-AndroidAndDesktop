@@ -1,4 +1,4 @@
-package org.example.shared.ui
+package org.example.shared.components
 
 import androidx.compose.foundation.layout.*
 import androidx.compose.foundation.shape.RoundedCornerShape

@@ -23,6 +23,7 @@ kotlin {
         val androidMain by getting {
             dependencies {
                 api("androidx.compose.ui:ui-tooling-preview:1.4.3")
+                api("androidx.lifecycle:lifecycle-viewmodel-ktx:2.6.2")
             }
         }
 
