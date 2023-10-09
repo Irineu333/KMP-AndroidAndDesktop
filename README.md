@@ -1,6 +1,6 @@
 # [Template] KMP Android And Desktop
 
-Cross-platform project template with **android** and **desktop** targets (with **Compose Multiplatform**).
+Kotlin Multiplatform project template with **Android** and **desktop** targets, and **Compose Multiplatform**.
 
 ## Versions
 
@@ -32,10 +32,11 @@ Download and install [Intellij IDEA](https://www.jetbrains.com/idea/download).
 
 ## Screenshots
 
-| Android                                               | Desktop                                           |
-|-------------------------------------------------------|---------------------------------------------------|
-| ![android.png](screenshots/android.png)               | ![desktop](screenshots/desktop.png)               |
-| ![android dialog.png](screenshots/android-dialog.png) | ![desktop dialog](screenshots/desktop-dialog.png) |
+| Android                                               | Desktop                                                     |
+|-------------------------------------------------------|-------------------------------------------------------------|
+| ![android.png](screenshots/android.png)               | <p align="center"> ![desktop](screenshots/desktop.png) </p> |
+| <p align="center"> Android Dialog </p>                | <p align="center"> Desktop Dialog </p>                      |
+| ![android dialog.png](screenshots/android-dialog.png) | ![desktop dialog](screenshots/desktop-dialog.png)           |
 
 ## Docs
 - [Configure a Gradle project | Kotlin](https://kotlinlang.org/docs/gradle-configure-project.html)
@@ -43,6 +44,5 @@ Download and install [Intellij IDEA](https://www.jetbrains.com/idea/download).
 - [Compose Multiplatform](https://www.jetbrains.com/lp/compose-multiplatform/)
 
 ## Examples
-- [Issue Tracker | JetBrains](https://github.com/JetBrains/compose-multiplatform/tree/master/examples/issues)
-- [KMP Calculator | Anthoni Ipiranga](https://github.dev/ipirangad3v/kmp-calculator)
-- [MusicApp-KMP | Abdul Basit](https://github.com/SEAbdulbasit/MusicApp-KMP)
+- [Compose Multiplatform Template](https://github.com/JetBrains/compose-multiplatform-template)
+- [Compose Multiplatform Examples](https://github.com/JetBrains/compose-multiplatform/tree/master/examples)
