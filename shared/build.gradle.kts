@@ -29,18 +29,17 @@ kotlin {
 
         val desktopMain by getting {
             dependencies {
-                api(compose.preview)
+                api(compose.desktop.common)
             }
         }
 
         val commonMain by getting {
             dependencies {
                 api(compose.materialIconsExtended)
-
-                implementation(compose.runtime)
-                implementation(compose.foundation)
-                implementation(compose.ui)
-                implementation(compose.material)
+                api(compose.runtime)
+                api(compose.foundation)
+                api(compose.ui)
+                api(compose.material)
             }
         }
     }

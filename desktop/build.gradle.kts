@@ -17,7 +17,6 @@ dependencies {
     implementation(compose.desktop.currentOs)
 }
 
-
 compose.desktop {
     application {
         mainClass = "org.example.desktop.MainKt"
