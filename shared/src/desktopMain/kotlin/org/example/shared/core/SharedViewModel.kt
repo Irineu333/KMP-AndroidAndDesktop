@@ -2,8 +2,6 @@ package org.example.shared.core
 
 import kotlinx.coroutines.MainScope
 
-actual open class SharedViewModel actual constructor() {
-
+actual abstract class SharedViewModel {
     actual val scope = MainScope()
-
 }
