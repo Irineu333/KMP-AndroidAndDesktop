@@ -10,7 +10,7 @@ object LocalSharedViewModelStoreOwner {
 
     val current: SharedViewModelStoreOwner?
         @Composable
-        get() = LocalViewModelStoreOwner.current ?: getStartsViewModelStoreOwner()
+        get() = LocalViewModelStoreOwner.current ?: getInitialViewModelStoreOwner()
 
     infix fun provides(
         viewModelStoreOwner: SharedViewModelStoreOwner
@@ -20,4 +20,4 @@ object LocalSharedViewModelStoreOwner {
 }
 
 @Composable
-expect fun getStartsViewModelStoreOwner() : SharedViewModelStoreOwner?
+expect fun getInitialViewModelStoreOwner() : SharedViewModelStoreOwner?

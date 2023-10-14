@@ -5,11 +5,23 @@ import kotlinx.coroutines.cancel
 
 actual abstract class SharedViewModel {
 
-    actual val viewModelScope = MainScope()
+    private var hasCleared = false
 
-    actual fun onCleared() { viewModelScope.cancel() }
-    
+    actual val viewModelScope by lazy {
+        val scope = MainScope()
+
+        if (hasCleared) {
+            scope.cancel()
+        }
+
+        scope
+    }
+
+    actual fun onCleared() { }
+
     actual fun clear() {
+        hasCleared = true
+
         // TODO: clear ViewModel
     }
 }

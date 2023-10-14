@@ -7,7 +7,7 @@ class SharedViewModelProvider(
 ) {
     constructor(
         owner: SharedViewModelStoreOwner
-    ) : this(owner.store)
+    ) : this(owner.viewModelStore)
 
     @Suppress("UNCHECKED_CAST")
     fun <T : SharedViewModel> provide(clazz: KClass<T>): T {

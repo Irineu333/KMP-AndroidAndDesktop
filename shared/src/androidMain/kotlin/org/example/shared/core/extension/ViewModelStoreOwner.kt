@@ -5,7 +5,10 @@ import org.example.shared.core.viewmodel.SharedViewModelStore
 import org.example.shared.core.viewmodel.SharedViewModelStoreOwner
 
 fun ViewModelStoreOwner.toShared(): SharedViewModelStoreOwner {
+
+    val viewModelStore = viewModelStore
+
     return object : SharedViewModelStoreOwner {
-        override val store: SharedViewModelStore = viewModelStore.toShared()
+        override val viewModelStore = viewModelStore.toShared()
     }
 }

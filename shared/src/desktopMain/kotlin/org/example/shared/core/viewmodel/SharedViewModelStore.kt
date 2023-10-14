@@ -16,7 +16,6 @@ class DesktopViewModelStore : SharedViewModelStore {
         return viewModels[key]
     }
 
-
     override fun keys(): Set<String> {
 
         return HashSet(viewModels.keys)
