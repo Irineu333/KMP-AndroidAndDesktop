@@ -11,13 +11,11 @@ import org.example.shared.ui.app.AppViewModel
 
 class MainActivity : ComponentActivity() {
 
-    private val appViewModel by viewModels<AppViewModel>()
-
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
 
         setContent {
-            App(appViewModel)
+            App()
         }
     }
 }
@@ -25,5 +23,5 @@ class MainActivity : ComponentActivity() {
 @Preview
 @Composable
 fun DefaultPreview() {
-    App(AppViewModel())
+    App()
 }

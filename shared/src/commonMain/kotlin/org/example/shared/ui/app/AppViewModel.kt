@@ -2,7 +2,7 @@ package org.example.shared.ui.app
 
 import kotlinx.coroutines.flow.MutableStateFlow
 import kotlinx.coroutines.flow.asStateFlow
-import org.example.shared.core.SharedViewModel
+import org.example.shared.core.viewmodel.SharedViewModel
 
 class AppViewModel : SharedViewModel() {
 

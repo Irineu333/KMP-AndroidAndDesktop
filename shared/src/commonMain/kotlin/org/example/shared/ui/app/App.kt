@@ -14,9 +14,15 @@ import androidx.compose.ui.Modifier
 import androidx.compose.ui.graphics.vector.rememberVectorPainter
 import org.example.shared.core.getPlatform
 import org.example.shared.components.SharedDialog
+import org.example.shared.core.viewmodel.SharedViewModelProvider
+import org.example.shared.core.viewmodel.SingletonViewModelStoreOwner
 
 @Composable
-fun App(viewModel : AppViewModel) = MaterialTheme {
+fun App(
+    viewModel: AppViewModel = SharedViewModelProvider(
+        SingletonViewModelStoreOwner
+    ).provide(AppViewModel::class)
+) = MaterialTheme {
 
     Box(
         contentAlignment = Alignment.Center,

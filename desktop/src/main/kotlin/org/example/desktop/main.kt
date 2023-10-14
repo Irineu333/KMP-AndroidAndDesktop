@@ -12,7 +12,6 @@ import androidx.compose.ui.window.WindowPosition
 import androidx.compose.ui.window.application
 import androidx.compose.ui.window.rememberWindowState
 import org.example.shared.ui.app.App
-import org.example.shared.ui.app.AppViewModel
 
 fun main() = application {
 
@@ -29,12 +28,12 @@ fun main() = application {
             )
         )
     ) {
-        App(AppViewModel())
+        App()
     }
 }
 
 @Preview
 @Composable
 fun DefaultPreview() {
-    App(AppViewModel())
+    App()
 }
