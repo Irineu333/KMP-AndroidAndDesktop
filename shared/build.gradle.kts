@@ -24,6 +24,7 @@ kotlin {
             dependencies {
                 api("androidx.compose.ui:ui-tooling-preview:1.4.3")
                 api("androidx.lifecycle:lifecycle-viewmodel-ktx:2.6.2")
+                api("androidx.lifecycle:lifecycle-viewmodel-compose:2.6.2")
             }
         }
 

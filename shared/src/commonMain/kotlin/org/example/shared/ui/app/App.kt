@@ -14,13 +14,13 @@ import androidx.compose.ui.Modifier
 import androidx.compose.ui.graphics.vector.rememberVectorPainter
 import org.example.shared.core.getPlatform
 import org.example.shared.components.SharedDialog
+import org.example.shared.core.viewmodel.LocalSharedViewModelStoreOwner
 import org.example.shared.core.viewmodel.SharedViewModelProvider
-import org.example.shared.core.viewmodel.SingletonViewModelStoreOwner
 
 @Composable
 fun App(
     viewModel: AppViewModel = SharedViewModelProvider(
-        SingletonViewModelStoreOwner
+        LocalSharedViewModelStoreOwner.current ?: error("No ViewModelStoreOwner")
     ).provide(AppViewModel::class)
 ) = MaterialTheme {
 
