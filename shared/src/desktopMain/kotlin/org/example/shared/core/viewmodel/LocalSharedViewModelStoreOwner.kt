@@ -5,4 +5,7 @@ import androidx.compose.runtime.ProvidedValue
 import androidx.compose.runtime.compositionLocalOf
 
 @Composable
-actual fun getInitialViewModelStoreOwner(): SharedViewModelStoreOwner? = ApplicationViewModelStoreOwner
+internal actual fun getInitialViewModelStoreOwner(): SharedViewModelStoreOwner? {
+
+    return ApplicationViewModelStoreOwner
+}

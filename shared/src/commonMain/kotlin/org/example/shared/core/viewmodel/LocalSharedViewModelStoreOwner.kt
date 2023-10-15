@@ -6,18 +6,19 @@ import androidx.compose.runtime.compositionLocalOf
 
 object LocalSharedViewModelStoreOwner {
 
-    private val LocalViewModelStoreOwner = compositionLocalOf<SharedViewModelStoreOwner?> { null }
+    private val LocalSharedViewModelStoreOwner =
+        compositionLocalOf<SharedViewModelStoreOwner?> { null }
 
     val current: SharedViewModelStoreOwner?
         @Composable
-        get() = LocalViewModelStoreOwner.current ?: getInitialViewModelStoreOwner()
+        get() = LocalSharedViewModelStoreOwner.current ?: getInitialViewModelStoreOwner()
 
     infix fun provides(
         viewModelStoreOwner: SharedViewModelStoreOwner
     ): ProvidedValue<SharedViewModelStoreOwner?> {
-        return LocalViewModelStoreOwner.provides(viewModelStoreOwner)
+        return LocalSharedViewModelStoreOwner.provides(viewModelStoreOwner)
     }
 }
 
 @Composable
-expect fun getInitialViewModelStoreOwner() : SharedViewModelStoreOwner?
+internal expect fun getInitialViewModelStoreOwner(): SharedViewModelStoreOwner?

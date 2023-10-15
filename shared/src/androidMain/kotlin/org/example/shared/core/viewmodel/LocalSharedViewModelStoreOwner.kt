@@ -5,4 +5,4 @@ import androidx.lifecycle.viewmodel.compose.LocalViewModelStoreOwner
 import org.example.shared.core.extension.toShared
 
 @Composable
-actual fun getInitialViewModelStoreOwner() = LocalViewModelStoreOwner.current?.toShared()
+internal actual fun getInitialViewModelStoreOwner() = LocalViewModelStoreOwner.current?.toShared()

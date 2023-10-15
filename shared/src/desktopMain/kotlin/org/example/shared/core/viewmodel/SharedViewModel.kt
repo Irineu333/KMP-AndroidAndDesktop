@@ -21,7 +21,7 @@ actual abstract class SharedViewModel {
 
     actual fun clear() {
         hasCleared = true
-
-        // TODO: clear ViewModel
+        viewModelScope.cancel()
+        onCleared()
     }
 }
