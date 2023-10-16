@@ -1,6 +1,6 @@
 package org.example.shared.core.viewmodel
 
-class DesktopViewModelStore : SharedViewModelStore {
+class DefaultViewModelStore : SharedViewModelStore {
 
     private val viewModels: MutableMap<String, SharedViewModel> = mutableMapOf()
 

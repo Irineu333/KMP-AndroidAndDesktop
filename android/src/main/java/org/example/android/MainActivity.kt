@@ -7,6 +7,7 @@ import androidx.activity.viewModels
 import androidx.compose.material.MaterialTheme
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.tooling.preview.Preview
+import androidx.lifecycle.ViewModelProvider
 import org.example.shared.ui.feature.app.App
 import org.example.shared.ui.feature.app.AppViewModel
 

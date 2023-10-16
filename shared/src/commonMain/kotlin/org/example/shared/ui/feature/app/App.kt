@@ -15,6 +15,7 @@ import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.graphics.vector.rememberVectorPainter
 import androidx.compose.ui.unit.dp
+import org.example.shared.components.DialogScreen
 import org.example.shared.core.getPlatform
 import org.example.shared.components.SharedDialog
 import org.example.shared.core.viewmodel.sharedViewModel
@@ -47,7 +48,7 @@ fun App(
     }
 
     if (mustShowDialog.value) {
-        SharedDialog(
+        DialogScreen(
             icon = rememberVectorPainter(Icons.TwoTone.WatchLater),
             title = "Stop Watch",
             onCloseRequest = {
