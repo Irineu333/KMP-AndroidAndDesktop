@@ -18,10 +18,7 @@ actual fun SharedDialog(
 ) = Dialog(
     title = title,
     icon = icon,
-    state = rememberDialogState(
-        width = size.width,
-        height = size.height
-    ),
+    state = rememberDialogState(size = size),
     onCloseRequest = onCloseRequest
 ) {
     content()

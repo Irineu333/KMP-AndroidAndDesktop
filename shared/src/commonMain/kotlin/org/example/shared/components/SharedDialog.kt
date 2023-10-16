@@ -9,7 +9,7 @@ import androidx.compose.ui.unit.dp
 expect fun SharedDialog(
     title: String,
     icon: Painter? = null,
-    size: DpSize = DpSize(200.dp, 150.dp),
+    size: DpSize = DpSize.Unspecified,
     onCloseRequest: () -> Unit,
-    content: @Composable () -> Unit
+    content: @Composable () -> Unit,
 )

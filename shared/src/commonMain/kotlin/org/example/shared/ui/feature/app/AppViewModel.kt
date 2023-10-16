@@ -1,4 +1,4 @@
-package org.example.shared.ui.app
+package org.example.shared.ui.feature.app
 
 import kotlinx.coroutines.flow.MutableStateFlow
 import kotlinx.coroutines.flow.asStateFlow

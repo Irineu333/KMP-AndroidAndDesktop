@@ -6,6 +6,7 @@ import androidx.compose.material.Card
 import androidx.compose.material.Icon
 import androidx.compose.material.Text
 import androidx.compose.runtime.Composable
+import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.graphics.painter.Painter
 import androidx.compose.ui.unit.DpSize
@@ -20,19 +21,26 @@ actual fun SharedDialog(
     size: DpSize,
     onCloseRequest: () -> Unit,
     content: @Composable () -> Unit
-) = Dialog(
-    onDismissRequest = onCloseRequest,
-) {
+) = Dialog(onCloseRequest) {
+
     Card(
         shape = RoundedCornerShape(8.dp),
-        modifier = Modifier.size(size)
+        modifier = if (size == DpSize.Unspecified) {
+            Modifier
+        } else {
+            Modifier.size(size)
+        }
     ) {
-        Column(Modifier.padding(8.dp)) {
-            Row {
+        Column {
+            Row(
+                modifier = Modifier.padding(8.dp),
+                verticalAlignment = Alignment.CenterVertically
+            ) {
                 if (icon != null) {
                     Icon(
                         painter = icon,
-                        contentDescription = null /* Decorative */
+                        contentDescription = null, /* Decorative */
+                        Modifier.size(18.dp)
                     )
                 }
 
