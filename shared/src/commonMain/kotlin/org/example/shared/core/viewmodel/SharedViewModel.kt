@@ -7,6 +7,6 @@ expect abstract class SharedViewModel() {
     val viewModelScope: CoroutineScope
 
     fun onCleared()
-    fun clear()
+    internal fun clear()
 
 }

@@ -12,7 +12,7 @@ actual abstract class SharedViewModel : ViewModel() {
         super.onCleared()
     }
 
-    actual fun clear() {
+    internal actual fun clear() {
         call("clear")
     }
 }
