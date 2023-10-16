@@ -30,12 +30,17 @@ kotlin {
 
         val desktopMain by getting {
             dependencies {
+
+                // For Dispatchers.Main
+                api("org.jetbrains.kotlinx:kotlinx-coroutines-swing:1.6.4")
+
                 api(compose.desktop.common)
             }
         }
 
         val commonMain by getting {
             dependencies {
+
                 api(compose.materialIconsExtended)
                 api(compose.runtime)
                 api(compose.foundation)

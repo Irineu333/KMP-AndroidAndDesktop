@@ -5,7 +5,7 @@ import kotlinx.coroutines.delay
 import kotlinx.coroutines.flow.MutableStateFlow
 import kotlinx.coroutines.flow.asStateFlow
 import kotlinx.coroutines.launch
-import  org.example.shared.core.viewmodel.SharedViewModel
+import org.example.shared.core.viewmodel.SharedViewModel
 import java.time.Instant
 import java.time.LocalDateTime
 import java.time.ZoneId
