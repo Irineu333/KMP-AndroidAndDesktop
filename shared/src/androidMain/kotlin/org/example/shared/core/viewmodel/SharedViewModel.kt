@@ -1,7 +1,7 @@
 package org.example.shared.core.viewmodel
 
 import androidx.lifecycle.ViewModel
-import org.example.shared.core.extension.call
+import org.example.shared.core.extension.callPrivateMethod
 import androidx.lifecycle.viewModelScope as androidViewModelScope
 
 actual abstract class SharedViewModel : ViewModel() {
@@ -13,6 +13,9 @@ actual abstract class SharedViewModel : ViewModel() {
     }
 
     internal actual fun clear() {
-        call("clear")
+        callPrivateMethod(
+            clazz = ViewModel::class.java,
+            name = "clear"
+        )
     }
 }
