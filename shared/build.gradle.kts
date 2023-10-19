@@ -35,6 +35,9 @@ kotlin {
 
         val commonMain by getting {
             dependencies {
+
+                api("cafe.adriel.voyager:voyager-navigator:1.0.0-rc07")
+
                 api(compose.materialIconsExtended)
                 api(compose.runtime)
                 api(compose.foundation)
