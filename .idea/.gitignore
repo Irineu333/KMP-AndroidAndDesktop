@@ -3,3 +3,5 @@
 /workspace.xml
 /artifacts
 /uiDesigner.xml
+# GitHub Copilot persisted chat sessions
+/copilot/chatSessions

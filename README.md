@@ -13,22 +13,13 @@ Latest combination without errors and warnings (2023-10-07):
 
 ## Build
 
-Download and install [Intellij IDEA](https://www.jetbrains.com/idea/download).
+To build this project, the JDK (Java Development Kit) and the Android SDK are required. 
+I recommend using [Intellij IDEA](https://www.jetbrains.com/idea/download) as the IDE, with the **Android**, **Jetpack Compose** and **Compose Multiplatform** plugins installed.
 
-### Android
+> You can get the **JDK** and **Android SDK** directly from **Intellij IDEA**.
 
-1. Configure the JDK (17).
-2. Open the project in Intellij IDEA.
-3. Install Android SDK using SDK Setup of IntelliJ (File -> Settings -> Languages & Frameworks -> Android SDK).
-4. Open and install with `gradlew :android:installDebug`(connected device or emulator required).
-5. Or build an apk with `gradlew :android:assembleDebug` (android/build/outputs/apk/debug/android-debug.apk) .
-
-### Desktop
-
-1. Configure the JDK (17).
-2. Open the project in Intellij IDEA.
-3. Run with `gradlew :desktop:run`.
-4. Or package a distribution with `gradlew :desktop:packageDistributionForCurrentOS` (build/compose/binaries).
+Use run configurations to get started.
+<br> ![run-android.png](screenshots/run-android.png)
 
 ## Screenshots
 
