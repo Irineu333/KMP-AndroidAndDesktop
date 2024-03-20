@@ -1,9 +1,9 @@
 plugins {
-    kotlin("multiplatform") version "1.8.10" apply false
-    kotlin("android") version "1.8.10" apply false
-    id("com.android.application") version "7.4.0" apply false
-    id("com.android.library") version "7.4.0" apply false
-    id("org.jetbrains.compose") version "1.4.3" apply false
+    // This prevents plugins from being loaded multiple times in each subproject's classloader.
+    alias(libs.plugins.kotlin.multiplatform) apply false
+    alias(libs.plugins.android.application) apply false
+    alias(libs.plugins.android.library) apply false
+    alias(libs.plugins.compose) apply false
 }
 
 allprojects {
@@ -12,6 +12,3 @@ allprojects {
         mavenCentral()
     }
 }
-
-group = "org.example"
-version = "1.0-DEV"

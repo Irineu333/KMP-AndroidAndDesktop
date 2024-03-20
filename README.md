@@ -4,12 +4,14 @@ Kotlin Multiplatform project template with **Android** and **desktop** targets, 
 
 ## Versions
 
-Latest combination without errors and warnings (2023-10-07):
+Latest update 2024-03-20:
 
-- Kotlin: 1.8.10 (compatible with compose compiler 1.4.3)
-- AGP: 7.4.0 (compatible with Kotlin Plugin 1.8.10)
-- JDK: 17 (supported for AGP 7.4.0)
-- Android SDK: 33.0.0 (compatible with AGP 7.4.0)
+- Kotlin: 1.9.22
+- AGP: 8.2.2 
+- Gradle: 8.2.1
+- JDK: 17
+- CMP: 1.6.1 (Jetpack Compose 1.6.3)
+- Android SDK: 34
 
 ## Build
 

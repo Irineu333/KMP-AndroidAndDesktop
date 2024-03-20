@@ -5,13 +5,13 @@ plugins {
 
 android {
     namespace = "org.example.android"
-    compileSdk = 33
+    compileSdk = 34
 
     defaultConfig {
         applicationId = "org.example.android"
 
         minSdk = 24
-        targetSdk = 33
+        targetSdk = 34
 
         versionCode = 1
         versionName = "1.0-DEV"
@@ -33,14 +33,13 @@ android {
         compose = true
     }
 
-    composeOptions {
-        // Support kotlin 1.8.10
-        kotlinCompilerExtensionVersion = "1.4.3"
-    }
-
     compileOptions {
         sourceCompatibility = JavaVersion.VERSION_17
         targetCompatibility = JavaVersion.VERSION_17
+    }
+
+    composeOptions {
+        kotlinCompilerExtensionVersion = "1.5.10" // Compatible with Kotlin 1.9.22
     }
 
     kotlin {
@@ -52,6 +51,6 @@ dependencies {
 
     implementation(project(":shared"))
 
-    implementation("androidx.appcompat:appcompat:1.6.1")
-    implementation("androidx.activity:activity-compose:1.7.0")
+    implementation(libs.androidx.activity.compose)
+    implementation(libs.compose.ui.tooling.preview)
 }

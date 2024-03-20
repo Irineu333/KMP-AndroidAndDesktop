@@ -13,7 +13,7 @@ kotlin {
 
     // targets
 
-    android()
+    androidTarget()
 
     jvm("desktop")
 
@@ -22,8 +22,8 @@ kotlin {
     sourceSets {
         val androidMain by getting {
             dependencies {
-                api("androidx.compose.ui:ui-tooling-preview:1.4.3")
-                api("androidx.lifecycle:lifecycle-viewmodel-ktx:2.6.2")
+                api(libs.compose.ui.tooling.preview)
+                api(libs.androidx.lifecycle.viewmodel.ktx)
             }
         }
 
