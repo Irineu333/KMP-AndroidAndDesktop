@@ -25,11 +25,9 @@ Use run configurations to get started.
 
 ## Screenshots
 
-|                        Android                        |                      Desktop                      |
-|:-----------------------------------------------------:|:-------------------------------------------------:|
-|        ![android.png](screenshots/android.png)        |        ![desktop](screenshots/desktop.png)        |
-|                    Android Dialog                     |                  Desktop Dialog                   |
-| ![android dialog.png](screenshots/android-dialog.png) | ![desktop dialog](screenshots/desktop-dialog.png) |
+|                 Android                 |                      Desktop                      |
+|:---------------------------------------:|:-------------------------------------------------:|
+| ![android.png](screenshots/android.png) |        ![desktop](screenshots/desktop.png)        |
 
 ## Docs
 - [Configure a Gradle project | Kotlin](https://kotlinlang.org/docs/gradle-configure-project.html)

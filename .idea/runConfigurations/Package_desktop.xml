@@ -10,7 +10,7 @@
       </option>
       <option name="taskNames">
         <list>
-          <option value=":desktop:packageDistributionForCurrentOS" />
+          <option value="application:packageDistributionForCurrentOS" />
         </list>
       </option>
       <option name="vmOptions" />
