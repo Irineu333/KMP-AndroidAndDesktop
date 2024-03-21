@@ -1,13 +1,20 @@
-pluginManagement {
-    repositories {
-        google()
-        mavenCentral()
-        gradlePluginPortal()
-    }
-}
+@file:Suppress("UnstableApiUsage")
 
 rootProject.name = "KMP-AndroidAndDesktop-Project"
 
-include(":android")
-include(":shared")
-include(":desktop")
+pluginManagement {
+    repositories {
+        google()
+        gradlePluginPortal()
+        mavenCentral()
+    }
+}
+
+dependencyResolutionManagement {
+    repositories {
+        google()
+        mavenCentral()
+    }
+}
+
+include(":application")
