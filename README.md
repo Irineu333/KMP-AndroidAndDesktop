@@ -35,5 +35,8 @@ Use run configurations to get started.
 - [Compose Multiplatform](https://www.jetbrains.com/lp/compose-multiplatform/)
 
 ## Examples
-- [Compose Multiplatform Template](https://github.com/JetBrains/compose-multiplatform-template)
 - [Compose Multiplatform Examples](https://github.com/JetBrains/compose-multiplatform/tree/master/examples)
+
+## Wizard & Templates
+- [Kotlin Multiplatform Wizard ](https://kmp.jetbrains.com/)
+- [Kotlin Templates](https://github.com/Kotlin?type=template)
