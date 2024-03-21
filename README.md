@@ -20,8 +20,9 @@ I recommend using [Intellij IDEA](https://www.jetbrains.com/idea/download) as th
 
 > You can get the **JDK** and **Android SDK** directly from **Intellij IDEA**.
 
-Use run configurations to get started.
-<br> ![run-android.png](screenshots/run-android.png)
+Use run configurations to get started. <br>
+
+![run-android.png](screenshots/run-android.png)
 
 ## Screenshots
 
