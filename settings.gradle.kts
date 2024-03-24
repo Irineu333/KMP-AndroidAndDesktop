@@ -1,6 +1,6 @@
 @file:Suppress("UnstableApiUsage")
 
-rootProject.name = "KMP-AndroidAndDesktop-Project"
+rootProject.name = "KMP-AndroidAndDesktop"
 
 pluginManagement {
     repositories {
